@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 
+import sys
+print('[0] argument is:', sys.argv[1])
+
 def my_f(a, counter):
 	a2 = ['a','b', 'c']
 	a3 = ['d','e', 'f']
@@ -27,7 +30,7 @@ def my_f(a, counter):
 		print(a9[counter], end='')
 	
 	
-f = open("bank.txt","r").read()
+f = open(sys.argv[1],"r").read()
 
 i = 0
 a = 0
