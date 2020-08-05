@@ -4,6 +4,7 @@ import sys
 print('[0] argument is:', sys.argv[1])
 
 def my_f(a, counter):
+	a0 = [' ']
 	a2 = ['a','b', 'c']
 	a3 = ['d','e', 'f']
 	a4 = ['g','h', 'i']
@@ -12,7 +13,9 @@ def my_f(a, counter):
 	a7 = ['p','q', 'r', 's']
 	a8 = ['t','u', 'v']
 	a9 = ['w','x', 'y', 'z']
-	if a == 2:
+	if a == 0:
+		print(a0[counter], end='')
+	elif a == 2:
 		print(a2[counter], end='')
 	elif a == 3:
 		print(a3[counter], end='')
